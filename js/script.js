@@ -52,3 +52,23 @@ function addTeamCardDom(teamCardObject){
     teamCard.append(cardText);
     teamContainer.append(teamCard);
 }
+
+/*
+    parte bonus del form
+*/
+// costanti del DOM
+const nameMember = document.getElementById('name');
+const roleMember = document.getElementById('role');
+const imgMember = document.getElementById('image');
+const addButton = document.getElementById('addMemberButton');
+addButton.addEventListener('click',addTeamCardObject);
+
+function addTeamCardObject(){
+    let cardObject = {
+        'nome' : nameMember.value,
+        'ruolo' : roleMember.value,
+        'foto' : imgMember.value
+    };
+    teamCardArr.push(cardObject);
+    addTeamCardDom(cardObject);
+}
