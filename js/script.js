@@ -63,6 +63,7 @@ const imgMember = document.getElementById('image');
 const addButton = document.getElementById('addMemberButton');
 addButton.addEventListener('click',addTeamCardObject);
 
+// funzioni del programma
 function addTeamCardObject(){
     let cardObject = {
         'nome' : nameMember.value,
