@@ -70,6 +70,9 @@ function addTeamCardObject(){
         'ruolo' : roleMember.value,
         'foto' : imgMember.value
     };
+    nameMember.value = '';
+    roleMember.value = '';
+    imgMember.value = '';
     teamCardArr.push(cardObject);
     addTeamCardDom(cardObject);
 }
